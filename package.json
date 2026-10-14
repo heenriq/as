@@ -1,0 +1,28 @@
+{
+  "name": "bot-empregos-discord",
+  "version": "4.1.0",
+  "description": "Bot de tickets para Discord: painel com botão Abrir ticket, escolha do emprego (que dá o cargo automaticamente), tickets privados e fechamento por administradores.",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js",
+    "deploy": "node src/deploy-commands.js",
+    "build": "node scripts/build.js",
+    "start:dist": "node dist/index.js",
+    "deploy:dist": "node dist/deploy-commands.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "better-sqlite3": "^12.0.0",
+    "discord.js": "^14.19.3",
+    "dotenv": "^16.4.7"
+  },
+  "devDependencies": {
+    "javascript-obfuscator": "^4.1.1"
+  },
+  "allowScripts": {
+    "better-sqlite3": true
+  }
+}
